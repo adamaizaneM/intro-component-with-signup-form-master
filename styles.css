@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: rgb(255, 122, 122);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Global box-sizing */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 5% auto;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .first-p {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .second-p {
+    color: hsl(246, 25%, 77%);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Right Section */
+  .right-section {
+    flex: 1;
+    max-width: 550px;
+  }
+  
+  /* Intro Trial Button */
+  .intro {
+    color: rgb(185, 182, 211);
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  /* Signup Section */
+  .signup {
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .claim {
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    height: 55px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .claim:hover {
+    background-color: hsl(154, 70%, 60%);
+  }
+  
+  /* Terms Section */
+  .terms {
+    color: lightgray;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+  
+  .terms span {
+    color: rgb(255, 122, 122);
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  
+  /* Small Phones (320px and smaller) */
+  @media (max-width: 320px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .signup {
+      max-width: 300px;
+    }
+  }
+  
+  /* Phones (375px and smaller) */
+  @media (max-width: 375px) {
+    .first-p {
+      font-size: 2rem;
+    }
+  
+    .signup {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  
+    .input {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Tablets (768px and smaller) */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .signup {
+      max-width: 400px;
+    }
+  }
+  
+  /* Laptops and Desktops (1024px and larger) */
+  @media (min-width: 1024px) {
+    main {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    .left-section, .right-section {
+      width: 48%; /* Equal width for both sections */
+    }
+  
+    .signup {
+      max-width: 550px;
+    }
+  }
+  
